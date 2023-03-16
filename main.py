@@ -17,10 +17,10 @@ from map_functions import get_mydict_varlist
 # 2. MAIN SETTINGS ######################################################
 st.set_page_config(page_title='Análisis Electoral',
                    layout="centered",
-                   page_icon='data_elect/asertiva_consulting/brand/icon.png')
+                   page_icon='data_elect/icon.png')
 
 # 3. BRAND AND TITLE #####################################################
-image = Image.open('data_elect/brand/brand.png')
+image = Image.open('data_elect/brand.png')
 st.image(image)
 
 st.title('PM COLIMA - 2024')
