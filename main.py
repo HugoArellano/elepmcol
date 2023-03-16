@@ -149,12 +149,9 @@ folium.features.GeoJson(
 folium_static(f, width=700, height=400)
 
 
-
-# The sexiest author
-st.write("Author: [HugoArellano](https://github.com/HugoArellano)")
-
 # Do you have any question?
 st.write("¿Tienes dudas sobre el nombre de las variables?, visita: [diccionario de datos](https://docs.google.com/spreadsheets/d/1--hD1c4mc45pjepO-4k_GXmOGpTBe4JBfpytKn7qK0g/edit?usp=sharing)")
 
-
+# The sexiest author
+st.write("Author: [HugoArellano](https://github.com/HugoArellano)")
 
