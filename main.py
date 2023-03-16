@@ -19,10 +19,10 @@ from map_functions import get_mydict_varlist
 # 2. MAIN SETTINGS ######################################################
 st.set_page_config(page_title='Análisis Electoral',
                    layout="centered",
-                   page_icon='/home/hugoarellano/asertiva_consulting/brand/icon.png')
+                   page_icon='data_elect/asertiva_consulting/brand/icon.png')
 
 # 3. BRAND AND TITLE #####################################################
-image = Image.open('/home/hugoarellano/asertiva_consulting/brand/brand.png')
+image = Image.open('data_elect/brand/brand.png')
 st.image(image)
 
 st.title('PM COLIMA - 2024')
@@ -30,14 +30,14 @@ st.title('PM COLIMA - 2024')
 # 4. LOADING ALL DATA ####################################################
 
 # GEOJSON
-geojson = gpd.read_file('/home/hugoarellano/asertiva_consulting/driver.geojson')
+geojson = gpd.read_file('data_elect/driver.geojson')
 
 # MERGED DATA RESUMEN PROYECCIONES AND
-df = pd.read_csv("/home/hugoarellano/asertiva_consulting/main_data_pmcol_2024.csv")
+df = pd.read_csv("data_elect/main_data_pmcol_2024.csv")
 gdf = pd.merge(geojson, df, on="seccion")
 
 # LATLON DA
-latlon = pd.read_csv('/home/hugoarellano/asertiva_consulting/latlon_df.csv')
+latlon = pd.read_csv('data_elect/latlon_df.csv')
 
 # GEOJSON AND MAIN DATA MERGED
 
