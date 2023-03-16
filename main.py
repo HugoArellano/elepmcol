@@ -3,9 +3,7 @@ from PIL import Image
 import pandas as pd
 import geopandas as gpd
 import json
-import plotly.express as px
 import numpy as np
-from urllib.request import urlopen
 from folium.features import GeoJsonTooltip
 import folium
 import random
